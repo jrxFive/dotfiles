@@ -1,0 +1,25 @@
+#!/bin/sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install caskroom/cask/brew-cask/
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install dropbox
+brew cask install hipchat
+brew cask install dash
+brew cask install vagrant
+brew cask install transmit
+brew cask install vlc
+brew cask install transmission
+brew cask install ccleaner
+brew cask install virtualbox
+brew cask install pycharm-ce
+brew cask install github
+brew cask install svnx
+brew cask install spotify
+brew cask install spectacle
+brew cask install steam
+brew cask install puppet
+brew cask install libreoffice
+brew cask install adobe-reader
+brew cask install evernote
+brew install go
