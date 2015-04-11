@@ -23,3 +23,5 @@ brew cask install libreoffice
 brew cask install adobe-reader
 brew cask install evernote
 brew install go
+brew install mercurial
+brew install leveldb

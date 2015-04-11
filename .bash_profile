@@ -5,7 +5,7 @@ export PS1="\u@\h \w> "
 export EDITOR=/usr/bin/vim
 export CLICOLOR=1
 export TERM=xterm-256color
-
+export GOPATH=$HOME/go
 
 #-------------------------------------
 # Directory Aliases
