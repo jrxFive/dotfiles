@@ -26,7 +26,8 @@ findPid () { lsof -t -c "$@" ; }
 #-------------------------------------
 # Networking
 #-------------------------------------
-alias ip='hostname --ip'
+alias hostip='hostname --ip'
+alias curlip='curl ip.appspot.com'
 alias lsockTCP='sudo /usr/sbin/lsof -nP | grep TCP'
 alias lsockUDP='sudo /usr/sbin/lsof -nP | grep UDP'
 alias lsock='sudo /usr/sbin/lsof -i -P'
@@ -35,5 +36,17 @@ alias lsock='sudo /usr/sbin/lsof -i -P'
 #-------------------------------------
 # Puppet
 #-------------------------------------
-alias runPuppet="sudo /usr/local/bin/puppet agent -t"
-alias dryPuppet="sudo /usr/local/bin/puppet agent -t --noop"
+alias rpuppet="sudo /usr/local/bin/puppet agent -t"
+alias dpuppet="sudo /usr/local/bin/puppet agent -t --noop"
+alias vpuppet="puppet parser validate"
+alias lpuppet="puppet-lint"
+alias lfpuppet="puppet-lint -f"
+
+#------------------------------------
+# Vagrant
+#-----------------------------------
+alias vd="vagrant destroy"
+alias vdf="vagrant destroy --force"
+alias vp="vagrant provision"
+alias vu="vagrant up"
+alias vs="vagrant ssh"
